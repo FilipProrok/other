@@ -2,16 +2,30 @@ package pl.itechgroup.bank;
 
 public class Main {
 
+    /*
+    public static void showOddNumbers(){
+        for(int i = 0; i <= 100; i++){
+            if( i % 2 != 0) {
+                System.out.println(i);
+            }
+        }
+    }
+    */
+
+
+    public static void showOddNumbers(){
+        int i = 0;
+        while (i <= 100){
+            if( i % 2 != 0) {
+                System.out.println(i);
+
+            }
+            i++;
+        }
+    }
+
     public static void main(String[] args) {
-        System.out.println("Witaj");
-        boolean var1 = true;
-        char var2 = 'a';
-        byte var3 = 60;
-        short var4 = 180;
-        int var5 = 290;
-        long var6 = 555_444_333L;
-        float var7 = 4.4829F;
-        double var8 = 6.33335555;
+        showOddNumbers();
 
     }
 }
