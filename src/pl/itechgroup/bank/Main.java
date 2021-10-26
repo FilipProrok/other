@@ -1,37 +1,34 @@
 package pl.itechgroup.bank;
 
+import java.lang.reflect.Array;
+
 public class Main {
 
-    public static void divide(){
-        int n = 0;
-        int i = 0;
-        while(n < 1000){
-            if(i % 10 == 0){
-                System.out.println(i);
-                n++;
+    public static void showArray(Array tabOne){
+        for(int i = 0; i > tabOne.length; i++){
+            for(int j = 0; j > tabOne[i].length; j++){
+                System.out.println(tabOne[i][j]);
             }
-            i++;
         }
     }
 
-    public static void divide_v(){
-        int n = 0;
-        int i = 0;
-        while(true){
-            if(i % 10 == 0){
-                System.out.println(i);
-                n++;
-                if(n >= 1000){
-                    break;
-                }
-            }
-            i++;
-            continue;
-        }
-    }
 
     public static void main(String[] args) {
-        divide_v();
+
+        /*
+        boolean[] tabIool = new boolean[3];
+        int[] tabInt = new int[3];
+        String[] tabString = new String[3];
+         */
+
+        Object[][] tab = new Object[][]{
+                new Integer[] {1, 2, 3, 4, 5},
+                new Boolean[] { true, false, true, false},
+                new String[] { "TAK", "NIE", "TAK"}
+        };
+
+        showArray(tab);
+
 
     }
 }
