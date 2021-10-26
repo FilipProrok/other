@@ -11,10 +11,16 @@ public class Person {
         this.age = age;
     }
 
-    public void getInfo(){
-        System.out.println("Imie: " + firstName);
-        System.out.println("Nazwisko: " + secondName);
-        System.out.println("Wiek: " + age);
+
+    public String getInfo(){
+
+        return String.format("Imie: %s, Nazwisko: %s, Wiek: %d, ", firstName, secondName, age );
+
+    }
+
+    @Override
+    public String toString() {
+        return getInfo();
     }
 
 }
