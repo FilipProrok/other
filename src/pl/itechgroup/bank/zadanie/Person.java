@@ -12,6 +12,8 @@ public class Person {
     }
 
 
+
+
     public String getInfo(){
 
         return String.format("Imie: %s, Nazwisko: %s, Wiek: %d, ", firstName, secondName, age );
