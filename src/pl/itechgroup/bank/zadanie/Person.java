@@ -4,15 +4,24 @@ public class Person {
     String firstName;
     String secondName;
     int age;
+    boolean isBlocked;
 
-    public Person(String firstName, String secondName, int age){
+    Account account;
+
+    public Account getAccount() {
+        return account;
+    }
+
+    public void setAccount(Account account) {
+        this.account = account;
+    }
+
+    public Person(String firstName, String secondName, int age, boolean isBlocked){
         this.firstName = firstName;
         this.secondName = secondName;
         this.age = age;
+        this.isBlocked = isBlocked;
     }
-
-
-
 
     public String getInfo(){
 
